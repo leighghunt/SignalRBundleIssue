@@ -6,6 +6,7 @@ Test project illustrating ASP.NET MVC4 Bundling issue with SignalR
 - Create new ASP.NET MVC 4 Web Application using Internet Application, Razor engine
 - Add SignalR, following steps outlined at https://github.com/SignalR/SignalR/wiki/QuickStart-Hubs
 - Package Manager :
+
 ````
 PM> Install-Package SignalR
 Attempting to resolve dependency 'SignalR.Hosting.AspNet (≥ 0.5.3)'.
@@ -30,5 +31,14 @@ Successfully added 'SignalR.Js 0.5.3' to SignalRBundleIssue.
 Successfully added 'SignalR 0.5.3' to SignalRBundleIssue.
 Successfully uninstalled 'Newtonsoft.Json 4.5.6'.
 ````
+
 - Create a class that derives from Hub
 - Created Javascript + HTML Client
+
+- On starting application in Firefox, Firebug complains about ````$(function () {```` line in Index view, reporting:
+
+````
+TypeError: $ is undefined
+http://localhost:54051/
+Line 62
+````
