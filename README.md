@@ -42,3 +42,11 @@ TypeError: $ is undefined
 http://localhost:54051/
 Line 62
 ````
+
+Resolution
+==========
+Remove duplicate JS file, and move bundle to head.
+Resolves error, and signalr messages now getting through.
+
+See 5cdfa63ca7353b7b4c2599114d3a7c4602dbd047
+https://github.com/leighghunt/SignalRBundleIssue/commit/5cdfa63ca7353b7b4c2599114d3a7c4602dbd047
