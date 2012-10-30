@@ -4,3 +4,17 @@ obj
 
 # mstest test results
 TestResults
+
+*.bak
+logs/
+*.suo
+*.csproj.user
+*.vcproj.*.user
+*.vssscc
+*.vspscc
+*.*~
+*.swp
+Release/
+Debug/
+*.ncb
+*.scc
